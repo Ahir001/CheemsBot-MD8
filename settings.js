@@ -10,7 +10,7 @@ global.antispam = false //auto kick spammer (true to on, false to off)
 
 
 //if api key expire, u can generate one from here: https://beta.openai.com/account/api-keys
-global.keyopenai = "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"
+global.keyopenai = "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"
 
 //documents variants
 global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
