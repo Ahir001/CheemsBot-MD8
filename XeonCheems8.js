@@ -6287,7 +6287,69 @@ XeonBotInc.sendImage(from, response.data.data[0].url, text, m);
 console.log(err);
 replygcxeon("Sorry, there seems to be an error :"+ err);
 }
-break
+break;
+
+      default:
+        /*const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+        async function generateResponse(prompt, retries = 2) {
+          try {
+            const completion = await openai.createChatCompletion({
+              model: "gpt-3.5-turbo",
+              messages: [{ role: "user", content: prompt }],
+            });
+
+            console.log("API Key:", global.openAiAPI);
+
+            return completion.data.choices[0].message.content.trim();
+          } catch (error) {
+            if (
+              error.response &&
+              error.response.status === 429 &&
+              retries > 0
+            ) {
+              const retryAfter =
+                error.response.headers["retry-after"] * 1000 || 5000;
+              reply(
+                `Rate limit exceeded. Retrying in ${retryAfter / 1000
+                } seconds...`
+              );
+              await sleep(retryAfter);
+              return generateResponse(prompt, retries - 1);
+            } else {
+              console.error(error);
+              return "Error occurred while generating response";
+            }
+          }
+        }
+
+        generateResponse(inputText)
+          .then((response) => {
+            return client.sendMessage(m.chat, { text: response }, { quoted: m });
+          })
+          .catch((error) => {
+            console.error("Error getting response:", error);
+          });*/
+
+        break;
+    }
+
+    /* switch (command) {
+       case "bug1":
+         const bug1 = require("./virtex/Bug1");
+         let bug = bug1.bugsw;
+         reply(bug);
+         break;
+         case "bug2":
+         const bug2 = require("./virtex/Bug2");
+         let iphonebug = bug2.iphone;
+         reply(iphonebug);
+         break;
+ 
+       default:
+         return;
+ 
+     }*/
 case 'myip': {
         if (!XeonTheCreator) return XeonStickOwner()
         if (m.isGroup) return XeonStickPrivate()
